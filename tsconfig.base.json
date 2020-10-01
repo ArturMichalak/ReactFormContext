@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@qapp/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@qapp/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@qapp/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
