@@ -4,19 +4,19 @@ import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 export default {
   component: Button,
-  title: 'Styled Button',
+  title: 'Button',
   decorators: [withKnobs],
 };
 
 export const primary = () => {
   const props: ButtonProps = {
     children: text('Label', 'Press Me'),
-    backgroundColor: select(
+    background: select(
       'Color',
-      { Primary: 'blue', Secondary: 'red', Warning: 'orange' },
+      { Primary: 'blue', Secondary: 'red', Warning: 'orange', None: null },
       'blue'
     ),
   };
 
-  return <Button component="span" {...props} />;
+  return <Button {...props} />;
 };
